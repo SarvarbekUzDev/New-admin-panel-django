@@ -31,4 +31,5 @@ Check the result.
 enter it like this and the admin panel is ready.
 
 
+
 Thank you very much for your attention!
