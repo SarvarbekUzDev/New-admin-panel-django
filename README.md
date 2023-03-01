@@ -5,7 +5,7 @@ New advanced admin panel in Django
 Hello, this is a new flexible admin panel made in django
 
 This way you don't create an admin panel for your project, you just enter the model.
-# Installation
+### Installation
 > `pip install -r requirements.txt`
 
 # Things to do
