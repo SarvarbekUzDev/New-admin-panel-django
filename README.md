@@ -13,11 +13,11 @@ This way you don't create an admin panel for your project, you just enter the mo
      * and create a .env file
 
 ### Enter the data in the .env file:
-    ```sh
+    
      ADMIN='Username'
      PASSWORD='Password'
      COOKIE = is_admin
-    ```
+    
 
 Add the dashboard url to the project management part ( config ).
 Check the result.
