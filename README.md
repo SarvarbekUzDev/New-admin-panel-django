@@ -8,23 +8,26 @@ This way you don't create an admin panel for your project, you just enter the mo
 ### Installation
 > `pip install -r requirements.txt`
 
-# Things to do
+### Things to do
      * Add the dashboard and templates/dashboard folders to your project
      * and create a .env file
 
-## Enter the data in the .env file:
-     `ADMIN='Username'
+### Enter the data in the .env file:
+    ```sh
+     ADMIN='Username'
      PASSWORD='Password'
-     COOKIE = is_admin`
+     COOKIE = is_admin
+    ```
 
 Add the dashboard url to the project management part ( config ).
 Check the result.
 
-If so, go to dashboard.admin.py
+#### If so, go to dashboard.admin.py
+     ```
      ADMIN_REGISTER = [
           {'model': Model'},
-                 {'model': Model2'},
-     ]
+          {'model': Model2'},
+     ]```
 
 enter it like this and the admin panel is ready.
 
