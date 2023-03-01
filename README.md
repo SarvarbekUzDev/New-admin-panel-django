@@ -10,11 +10,12 @@ This way you don't create an admin panel for your project, you just enter the mo
 
 # Things to do
 Add the dashboard and templates/dashboard folders to your project
+and create a .env file
 
 ## Enter the data in the .env file:
-     ``ADMIN='Username'
+     `ADMIN='Username'
      PASSWORD='Password'
-     COOKIE = is_admin```
+     COOKIE = is_admin`
 
 Add the dashboard url to the project management part ( config ).
 Check the result.
