@@ -19,7 +19,7 @@ This way you don't create an admin panel for your project, you just enter the mo
      PASSWORD='Password'
      COOKIE = is_admin  #default
     
-Add the dashboard url to the project management part ( config ).
+Add the dashboard url to the project management part ( config.url ).
 Check the result.
 
 ![New-admin-panel-django-home-image](https://user-images.githubusercontent.com/120723170/222183187-6c47dae0-bc9d-4c9d-b735-359aabb03425.jpg)
