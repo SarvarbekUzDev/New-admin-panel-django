@@ -16,7 +16,7 @@ This way you don't create an admin panel for your project, you just enter the mo
     
      ADMIN='Username'
      PASSWORD='Password'
-     COOKIE = is_admin
+     COOKIE = is_admin # default
     
 
 Add the dashboard url to the project management part ( config ).
