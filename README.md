@@ -23,11 +23,10 @@ Add the dashboard url to the project management part ( config ).
 Check the result.
 
 #### If so, go to dashboard.admin.py
-     ```
      ADMIN_REGISTER = [
           {'model': Model'},
           {'model': Model2'},
-     ]```
+     ]
 
 enter it like this and the admin panel is ready.
 
