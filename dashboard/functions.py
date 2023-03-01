@@ -60,7 +60,7 @@ class IsAdmin(AccessMixin):
 
 		try:
 			return super().dispatch(request, *args, **kwargs)
-		except ZeroDivisionError as e:
+		except Exception as e:
 			print(e)
 			messages.error(request, "Error")
 			return redirect("dashboard:home")
