@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==4.1.5"
+django-crispy-forms = "==1.14.0"
+python-dotenv = "==0.20.0"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

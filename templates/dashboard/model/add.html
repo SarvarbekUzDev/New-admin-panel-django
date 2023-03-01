@@ -1,0 +1,26 @@
+{% extends 'dashboard/base.html' %}
+{% load crispy_forms_tags %}
+
+	{% block filename %}
+		{{ model }} / add /
+	{% endblock filename %}
+
+	{% block content %}
+		<!-- messages -->
+		{% if messages %}
+			{% for message in messages %}
+				<p class="alert alert-success"> {{ message }} </p>
+			{% endfor %}
+		{% endif %}
+		<!-- end messages -->
+
+		<form method="POST">
+			{% csrf_token %}
+			{{ form | crispy }}
+			
+			<input type="submit" value="Save and add" class="btn btn-success" name="_save_and_add"> 
+			<input type="submit" value="Save and edit" class="btn btn-primary" name="_save_and_edit"> 
+			<input type="submit" value="Save" class="btn" style="background: #11550E; color: #fff;" name="_save">
+		</form>
+
+	{% endblock content %}

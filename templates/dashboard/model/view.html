@@ -1,0 +1,65 @@
+{% extends 'dashboard/base.html' %}
+
+
+	{% block filename %}
+		{{ model }} / view /
+	{% endblock filename %}
+
+	{% block content %}
+		<!-- messages -->
+		{% if messages %}
+			{% for message in messages %}
+				<p class="alert alert-success"> {{ message }} </p>
+			{% endfor %}
+		{% endif %}
+		<!-- end messages -->
+
+		<form method="POST">
+			<div class="container">
+				{% csrf_token %}
+				<div class="row">
+					<select name="action" class="col-md-8 form-control" required>
+						<option> --------------- </option>
+						<option> Delete </option>
+					</select>
+					<input type="submit" value="GO" class="col-md-2 btn btn-success">
+				</div>
+			</div><br>
+
+			<table class="table table-light table-bordered">
+					<thead class="bg-dark text-light text-center">
+						<th><input onclick="all_check_true()" type="checkbox" id="checkbox_all_" name="checkbox_all_"></th>
+						<th> id </th>
+						<th> return </th>
+					</thead>
+					<tbody class="bg-light text-dark">
+							{% for data in page_obj %}
+							<tr id="keeper" class="keeper{{ data.id }}">
+								<td  class="text-center"><input type="checkbox" name="checkbox_" value="{{ data.id }}" onclick="click_superior('keeper{{ data.id }}')" id="keeper{{ data.id }}"></td>
+								<td>{{ data.id }}</td>
+								<td><a href="{% url 'dashboard:change' model data.id %}">{{ data }}</a></td>
+							</tr>
+							{% endfor %}
+					</tbody>
+				</table>
+			</form>
+
+		<ul class="pagination">
+        {% if page_obj.has_previous %}
+	        <li class="page-item"><a class="page-link" href="?page=1">&laquo; first</a></li>
+	        <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">previous</a></li>
+        {% endif %}
+
+		<li class="page-item active">
+		    <a href="#" class="page-link">{{ page_obj.number }}</a>
+		</li>
+        
+        {% if page_obj.has_next %}
+	        <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">next</a></li>
+	        <li class="page-item"><a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">last
+	            &raquo;</a></li>
+        {% endif %}
+        
+    </ul>
+
+	{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'dashboard/base.html' %}
+	
+	{% block filename %}
+			Home
+	{% endblock filename %}
+
+
+	{% block content %}
+		<!-- messages -->
+		{% if messages %}
+			{% for message in messages %}
+				<p class="alert alert-success"> {{ message }} </p>
+			{% endfor %}
+		{% endif %}
+		<!-- end messages -->
+		
+		{% for dict_data in ADMIN_REGISTER %}
+			<div class="container bg-muted">
+				<a href="{% url 'dashboard:modelview' dict_data.name %}">{{ dict_data.name }}</a>
+				<a class="text-dark" style="margin-left: 20px;" href="{% url 'dashboard:modeladd' dict_data.name %}"><i class="text-success fa fa-plus"></i> Add</a>
+				<hr>
+			</div>
+		{% endfor %}
+		
+
+	{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends 'dashboard/base.html' %}
+
+	{% block filename %}
+		 Profile / Update 
+	{% endblock filename %}
+
+	{% block content %}
+		<!-- messages -->
+		{% if messages %}
+			{% for message in messages %}
+				<p class="alert alert-success"> {{ message }} </p>
+			{% endfor %}
+		{% endif %}
+		<!-- end messages -->
+
+		<form method="POST">
+			{% csrf_token %}
+			<!-- Username -->
+			<label for="username">Username* </label>
+			<input class="form-control" type="text" name="username" value="{{ username }}" id="username">
+			
+			<br>
+			<!-- Password -->
+			<label for="password">Password* {{ password | slice:"4" }} ... </label>
+			<input class="form-control" type="password" name="password" value="{{ password }}" id="password">
+
+			<br>
+			<button class="btn btn-success"> Save </button>
+		</form>
+	{% endblock content %}
