@@ -9,8 +9,8 @@ This way you don't create an admin panel for your project, you just enter the mo
 > `pip install -r requirements.txt`
 
 # Things to do
-Add the dashboard and templates/dashboard folders to your project
-and create a .env file
+     * Add the dashboard and templates/dashboard folders to your project
+     * and create a .env file
 
 ## Enter the data in the .env file:
      `ADMIN='Username'
