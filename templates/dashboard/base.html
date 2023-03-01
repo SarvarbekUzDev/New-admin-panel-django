@@ -68,8 +68,8 @@
             </span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="{% url 'dashboard:modelview' admin_register.name %}"> <i class="fa fa-tags"></i> View </a>
-            <a class="dropdown-item" href="{% url 'dashboard:modeladd' admin_register.name %}"> <i class="fa fa-plus"></i> Add </a>
+            <a class="dropdown-item" href="{% url 'dashboard:modelview' admin_register.model.Meta.verbose_name  %}"> <i class="fa fa-tags"></i> View </a>
+            <a class="dropdown-item" href="{% url 'dashboard:modeladd' admin_register.model.Meta.verbose_name  %}"> <i class="fa fa-plus"></i> Add </a>
           </div>
           {% endfor %}
       </ul>
