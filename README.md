@@ -1,5 +1,5 @@
 # New-admin-panel-django
-New advanced admin panel in Django__
+New advanced admin panel in Django <br />
 
 
 Hello, this is a new flexible admin panel made in django
