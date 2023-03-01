@@ -22,7 +22,8 @@ This way you don't create an admin panel for your project, you just enter the mo
 Add the dashboard url to the project management part ( config ).
 Check the result.
 
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://res.cloudinary.com/practicaldev/image/fetch/s--4Ew9X5cj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/app-generator/django-admin-black/main/media/django-admin-black-screen.png))
+![alt text]([https://res.cloudinary.com/practicaldev/image/fetch/s--4Ew9X5cj--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://raw.githubusercontent.com/app-generator/django-admin-black/main/media/django-admin-black-screen.png])
+
 
 #### If so, go to dashboard.admin.py
      ADMIN_REGISTER = [
