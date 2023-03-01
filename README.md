@@ -1,13 +1,14 @@
 # New-admin-panel-django
 New advanced admin panel in Django
 
+
 Hello, this is a new flexible admin panel made in django
 
 This way you don't create an admin panel for your project, you just enter the model.
 
 Things to do:
     1) pip install -r requirements.txt
-     2) Add dashboard and templates/dashboard to your project
+     2) Add the dashboard and templates/dashboard folders to your project
 
 Enter the data in the .env file:
      ADMIN='Username'
@@ -23,7 +24,7 @@ If so, go to dashboard.admin.py
                  {'model': Model2'},
      ]
 
-log in and the admin panel is ready.
+enter it like this and the admin panel is ready.
 
 
 Thank you very much for your attention!
