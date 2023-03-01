@@ -16,8 +16,8 @@
 		
 		{% for dict_data in ADMIN_REGISTER %}
 			<div class="container bg-muted">
-				<a href="{% url 'dashboard:modelview' dict_data.name %}">{{ dict_data.name }}</a>
-				<a class="text-dark" style="margin-left: 20px;" href="{% url 'dashboard:modeladd' dict_data.name %}"><i class="text-success fa fa-plus"></i> Add</a>
+				<a href="{% url 'dashboard:modelview' dict_data.model.Meta.verbose_name  %}">{{ dict_data.model.Meta.verbose_name  }}</a>
+				<a class="text-dark" style="margin-left: 20px;" href="{% url 'dashboard:modeladd' dict_data.model.Meta.verbose_name  %}"><i class="text-success fa fa-plus"></i> Add</a>
 				<hr>
 			</div>
 		{% endfor %}
