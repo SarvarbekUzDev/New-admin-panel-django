@@ -11,5 +11,5 @@ from django.contrib.auth.models import User
 
 # New admin panel register
 ADMIN_REGISTER = [
-	{'model': User, 'name': 'user'},
+	{'model': User},
 ]
