@@ -6,10 +6,10 @@ Hello, this is a new flexible admin panel made in django
 
 This way you don't create an admin panel for your project, you just enter the model.
 # Installation
-> `npm install --save @types/yargs`
-Things to do:
-    1) pip install -r requirements.txt
-     2) Add the dashboard and templates/dashboard folders to your project
+> `pip install -r requirements.txt`
+
+# Things to do
+Add the dashboard and templates/dashboard folders to your project
 
 Enter the data in the .env file:
      ADMIN='Username'
