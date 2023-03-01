@@ -22,6 +22,8 @@ This way you don't create an admin panel for your project, you just enter the mo
 Add the dashboard url to the project management part ( config ).
 Check the result.
 
+![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
 #### If so, go to dashboard.admin.py
      ADMIN_REGISTER = [
           {'model': Model'},
