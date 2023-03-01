@@ -3,7 +3,7 @@ New advanced admin panel in Django <br />
 
 
 Hello, this is a new flexible admin panel made in django
-This way you don't create an admin panel for your project, you just enter the model.__
+This way you don't create an admin panel for your project, you just enter the model.<br />
 
 
 ### Installation
@@ -30,7 +30,7 @@ Check the result.
           {'model': Model2'},
      ]
 
-enter it like this and the admin panel is ready.__
+enter it like this and the admin panel is ready.<br />
 
 
 
