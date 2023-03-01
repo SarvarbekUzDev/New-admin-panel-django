@@ -30,7 +30,7 @@ Check the result.
           {'model': Model2'},
      ]
 
-enter it like this and the admin panel is ready.<br />
+enter it like this and the admin panel is ready. \
 
 
 
