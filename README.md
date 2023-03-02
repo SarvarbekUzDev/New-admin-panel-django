@@ -21,7 +21,7 @@ This way you don't create an admin panel for your project, you just enter the mo
     
 Add the control panel URL to the project control section ( config.url ).
 Check the result. (http://127.0.0.1:8000/control panel) <br />
-And the login window will open
+##### And the login window will open
     username = env.ADMIN
     passwrod = env.PASSWORD
 
