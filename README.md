@@ -21,9 +21,9 @@ This way you don't create an admin panel for your project, you just enter the mo
     
 Add the control panel URL to the project control section ( config.url ).
 Check the result. (http://127.0.0.1:8000/control panel) <br />
-##### And the login window will open
-    username = env.ADMIN
-    passwrod = env.PASSWORD
+And you will have a login window. Then enter these details
+ * username = env.ADMIN
+ * passwrod = env.PASSWORD
 
 ![New-admin-panel-django-home-image](https://user-images.githubusercontent.com/120723170/222183187-6c47dae0-bc9d-4c9d-b735-359aabb03425.jpg)
 
