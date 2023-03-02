@@ -19,14 +19,12 @@ This way you don't create an admin panel for your project, you just enter the mo
      PASSWORD='Password'
      COOKIE = is_admin  #default
     
-Add the control panel URL to the project control section ( config.urls ).
-    `
+###### Add the control panel URL to the project control section ( config.urls ).
     urlpatterns = [
         path('admin/', admin.site.urls),
         # new admin panel
         path('dashboard/', include('dashboard.urls')),
     ]
-    `
 
 Check the result. (http://127.0.0.1:8000/dashboard/) <br />
 And you will have a login window. Then enter these details
